@@ -1,109 +1,117 @@
-/* Ogólne ustawienia */
+/* RESET / BAZA */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #050816;
-  color: #e5e7eb;
-  line-height: 1.6;
-}
-
-/* GÓRA PORTFOLIO (HERO) */
-.hero {
-  min-height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 3rem 1.5rem;
-  background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000 100%);
-}
-
-.hero-inner {
-  max-width: 700px;
-}
-
-.hero-intro {
-  font-size: 1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9ca3af;
-  margin-bottom: 0.5rem;
-}
-
-.hero-name {
-  font-size: clamp(2.6rem, 5vw, 3.4rem);
-  font-weight: 800;
-  margin-bottom: 0.4rem;
-}
-
-.hero-role {
-  font-size: 1.05rem;
-  color: #cbd5f5;
-  border-top: 1px solid rgba(148, 163, 184, 0.4);
-  padding-top: 0.7rem;
-  margin-top: 0.7rem;
-}
-
-/* SEKCJE (O MNIE, PROJEKTY, KONTAKT) – WSZYSTKO NA ŚRODKU */
-.section {
-  padding: 3rem 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.section-alt {
-  background: #020617;
-}
-
-.section-inner {
-  max-width: 900px;
-  text-align: center;
-}
-
-.section-inner h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-/* Tekst akapitów */
-.section-inner p {
-  font-size: 1rem;
-  color: #d1d5db;
-}
-
-/* Projekty – karty */
-.projects-grid {
-  margin-top: 2rem;
-  display: grid;
-  gap: 1.5rem;
-}
-
-.project-card {
-  border-radius: 1rem;
-  padding: 1.5rem;
-  background: linear-gradient(145deg, #020617, #111827);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
-  text-align: left;
-}
-
-.project-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
+  background: #050509;
   color: #e5e7eb;
 }
 
-.project-card p {
+/* GŁÓWNY KONTENER */
+.page {
+  max-width: 760px;
+  margin: 60px auto 80px;
+  padding: 0 1.25rem 2rem;
+}
+
+/* KARTA PROFILOWA */
+.profile-card {
+  background: #111827;
+  border-radius: 18px;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.75);
+  margin-bottom: 2.8rem;
+}
+
+.profile-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.role {
   font-size: 0.95rem;
+  margin-top: 0.2rem;
+  color: #cbd5f5;
 }
 
-/* Kontakt */
-.contact-line {
+.tagline {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.profile-meta {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(55, 65, 81, 0.9);
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: 0.8rem;
+}
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(156, 163, 175, 0.7);
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.pill-link:hover {
+  background: #1f2937;
+}
+
+/* BLOKI SEKCYJNE JAK NA SCREENIE */
+.section-block {
+  margin-bottom: 2.6rem;
+}
+
+.section-title {
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(55, 65, 81, 0.95);
+  margin-bottom: 1.4rem;
+}
+
+.item {
+  margin-bottom: 1.2rem;
+}
+
+.item-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.item-desc {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  max-width: 60rem;
 }
 
 a {
@@ -115,9 +123,27 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsywność – przy większych ekranach karty obok siebie */
-@media (min-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+/* RESPONSYWNOŚĆ */
+@media (max-width: 600px) {
+  .page {
+    margin-top: 30px;
+  }
+
+  .profile-card {
+    padding: 1.3rem 1.4rem;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
+
+  .links-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
+
