@@ -2,71 +2,103 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <title>Portfolio – Paweł Tądera</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Paweł Tądera – Junior Data Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- GÓRA PORTFOLIO -->
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="hero-intro">Cześć, jestem</p>
-      <h1 class="hero-name">Paweł</h1>
-      <p class="hero-role">Junior Data Analyst | Student Informatyki Ekonomicznej</p>
-    </div>
-  </header>
+  <main class="page">
 
-  <!-- SEKCE: O MNIE -->
-  <section id="about" class="section">
-    <div class="section-inner">
-      <h2>O mnie</h2>
-      <p>
-        Jestem studentem informatyki ekonomicznej i początkującym analitykiem danych.
-        Buduję portfolio w Excelu i Power BI, tworzę raporty biznesowe oraz uczę się
-        SQL i analizy danych pod kątem realnych projektów dla firm.
-      </p>
-    </div>
-  </section>
-
-  <!-- SEKCE: PROJEKTY -->
-  <section id="projects" class="section section-alt">
-    <div class="section-inner">
-      <h2>Projekty</h2>
-
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>Sprzedaż smartwatchy – raport Power BI</h3>
-          <p>
-            Dashboard pokazujący sprzedaż wg krajów, kontynentów, miesięcy oraz
-            udział kategorii w przychodach. Zawiera mapy, karty KPI i analizę trendów.
+    <!-- GŁÓWNA KARTA PROFILOWA -->
+    <section class="profile-card">
+      <div class="profile-main">
+        <div>
+          <h1 class="name">Paweł Tądera</h1>
+          <p class="role">Junior Data Analyst · Student Informatyki Ekonomicznej</p>
+          <p class="tagline">
+            Tworzę raporty w Excelu i Power BI, uczę się SQL
+            i buduję portfolio pod realne projekty dla firm.
           </p>
-        </article>
-
-        <article class="project-card">
-          <h3>Sklep internetowy – analiza sprzedaży</h3>
-          <p>
-            Analiza danych z Excela: top produkty, dni tygodnia o najwyższej sprzedaży,
-            wpływ promocji na przychód oraz krótkie wnioski dla menedżera.
-          </p>
-        </article>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- SEKCE: KONTAKT -->
-  <section id="contact" class="section">
-    <div class="section-inner">
-      <h2>Kontakt</h2>
-      <p>
-        Chętnie podejmę się małych projektów analitycznych i tworzenia dashboardów.
-      </p>
-      <p class="contact-line">
-        Napisz do mnie: <a href="mailto:twoj.mail@gmail.com">twoj.mail@gmail.com</a>
-      </p>
-      <p class="contact-line">
-        GitHub: <a href="https://github.com/twoj-username" target="_blank">github.com/twoj-username</a>
-      </p>
-    </div>
-  </section>
+      <div class="profile-meta">
+        <p>Szukasz kogoś do analizy danych lub dashboardu?</p>
+        <div class="links-row">
+          <a href="mailto:twoj.mail@gmail.com" class="pill-link">✉️ twoj.mail@gmail.com</a>
+          <a href="https://github.com/twoj-username" target="_blank" class="pill-link">
+            🐙 GitHub
+          </a>
+          <a href="#" class="pill-link">📊 Power BI / Excel portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY COOKING -->
+    <section class="section-block">
+      <h2 class="section-title">currently cooking 🧪</h2>
+      <div class="item">
+        <h3 class="item-title">Portfolio analityka danych</h3>
+        <p class="item-desc">
+          Buduję zestaw prostych, czytelnych dashboardów w Power BI i Excelu
+          pod małe firmy – sprzedaż, raporty KPI i quick insights.
+        </p>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Dashboard sprzedaży smartwatchy (Power BI)</h3>
+        <p class="item-desc">
+          Analiza sprzedaży wg krajów, kontynentów i miesięcy, YoY, udział kategorii.
+          Mapy, karty KPI i sekcja z wnioskami dla menedżera.
+        </p>
+      </div>
+      <div class="item">
+        <h3 class="item-title">Nauka SQL + automatyzacja raportów</h3>
+        <p class="item-desc">
+          Ćwiczę SELECTy, JOINy i agregacje, żeby łączyć dane z kilku tabel
+          i podkładać je pod dashboardy w Power BI.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJEKTY / PAST PROJECTS -->
+    <section class="section-block">
+      <h2 class="section-title">data projects 📊</h2>
+
+      <div class="item">
+        <h3 class="item-title">Sklep internetowy – analiza sprzedaży</h3>
+        <p class="item-desc">
+          Dane z Excela: top produkty, najlepiej sprzedające się dni tygodnia,
+          wpływ promocji na przychód oraz konkretne rekomendacje dla właściciela sklepu.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3 class="item-title">Smartwatch sales – KPI report</h3>
+        <p class="item-desc">
+          Raport KPI: całkowita sprzedaż, udział kontynentów, dynamika miesiąc do miesiąca
+          i wizualne podsumowanie wyników za 2025 rok.
+        </p>
+      </div>
+    </section>
+
+    <!-- KONTAKT / FOOTER STYLE -->
+    <section class="section-block">
+      <h2 class="section-title">contact ☎️</h2>
+      <div class="item">
+        <p class="item-desc">
+          Otwarcie na małe projekty analityczne, dashboardy
+          oraz współpracę typu „zróbmy pierwszy projekt i zobaczmy wyniki”.
+        </p>
+        <p class="item-desc">
+          Napisz do mnie: <a href="mailto:twoj.mail@gmail.com">twoj.mail@gmail.com</a><br />
+          GitHub: <a href="https://github.com/twoj-username" target="_blank">
+            github.com/twoj-username
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
+
