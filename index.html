@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Paweł Tądera – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Portfolio – Paweł Tądera</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <header>
-    <h1>Cześć, jestem Paweł</h1>
-    <p>Junior Data Analyst | Student Informatyki Ekonomicznej</p>
+  <!-- GÓRA PORTFOLIO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-intro">Cześć, jestem</p>
+      <h1 class="hero-name">Paweł</h1>
+      <p class="hero-role">Junior Data Analyst | Student Informatyki Ekonomicznej</p>
+    </div>
   </header>
 
-  <section>
-    <h2>O mnie</h2>
-    <p>
-      Interesuję się analizą danych, Power BI, SQL oraz wizualizacjami biznesowymi.
-      Tworzę dashboardy, modele danych i projekty analityczne, które pomagają firmom podejmować decyzje.
-    </p>
-  </section>
-
-  <section>
-    <h2>Projekty</h2>
-
-    <div class="project">
-      <h3>📊 Dashboard sprzedaży smartwatchy</h3>
-      <p>Analiza miesięczna, mapa świata, trendy, udział kontynentów.</p>
+  <!-- SEKCE: O MNIE -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <h2>O mnie</h2>
+      <p>
+        Jestem studentem informatyki ekonomicznej i początkującym analitykiem danych.
+        Buduję portfolio w Excelu i Power BI, tworzę raporty biznesowe oraz uczę się
+        SQL i analizy danych pod kątem realnych projektów dla firm.
+      </p>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>☕ Galaxy Coffee – analiza sklepu online</h3>
-      <p>Power BI + Excel – top produkty, dni tygodnia, wpływ promocji.</p>
+  <!-- SEKCE: PROJEKTY -->
+  <section id="projects" class="section section-alt">
+    <div class="section-inner">
+      <h2>Projekty</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Sprzedaż smartwatchy – raport Power BI</h3>
+          <p>
+            Dashboard pokazujący sprzedaż wg krajów, kontynentów, miesięcy oraz
+            udział kategorii w przychodach. Zawiera mapy, karty KPI i analizę trendów.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Sklep internetowy – analiza sprzedaży</h3>
+          <p>
+            Analiza danych z Excela: top produkty, dni tygodnia o najwyższej sprzedaży,
+            wpływ promocji na przychód oraz krótkie wnioski dla menedżera.
+          </p>
+        </article>
+      </div>
     </div>
-
   </section>
 
-  <section>
-    <h2>Kontakt</h2>
-    <p>Email: <a href="mailto:twojmail@student.uni.lodz.pl">twojmail@student.uni.lodz.pl</a></p>
-    <p>GitHub: <a href="https://github.com/paweltadera">github.com/paweltadera</a></p>
+  <!-- SEKCE: KONTAKT -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2>Kontakt</h2>
+      <p>
+        Chętnie podejmę się małych projektów analitycznych i tworzenia dashboardów.
+      </p>
+      <p class="contact-line">
+        Napisz do mnie: <a href="mailto:twoj.mail@gmail.com">twoj.mail@gmail.com</a>
+      </p>
+      <p class="contact-line">
+        GitHub: <a href="https://github.com/twoj-username" target="_blank">github.com/twoj-username</a>
+      </p>
+    </div>
   </section>
-
-  <footer>
-    <p>© 2025 Paweł Tądera</p>
-  </footer>
 </body>
 </html>
